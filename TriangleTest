@@ -13,13 +13,13 @@ public class TriangleTest {
     @Test
     public void testMain() {
         assertEquals(determineType(0,1,1),"Not a Triangle");
-        assertEquals(determineType(201,100,140),"Scalene Triangle");
         assertEquals(determineType(-1,100,140),"Not a Triangle");
         assertEquals(determineType(4,8,15),"Not a Triangle");
         assertEquals(determineType(7,7,7),"Equilateral Triangle");
         assertEquals(determineType(3,4,5),"Right Triangle");
         assertEquals(determineType(9,40,41),"Right Triangle");
         assertEquals(determineType(5,6,7),"Scalene Triangle");
+        assertEquals(determineType(201,100,140),"Scalene Triangle");
         assertEquals(determineType(10,20,25),"Scalene Triangle");
         assertEquals(determineType(3,7,7),"Isosceles Triangle");
         
