@@ -1,7 +1,3 @@
-{
-  "language": "java",
-  "os": [
-    "osx"
-  ],
-  "dist": "xenial"
-}
+language: java
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
