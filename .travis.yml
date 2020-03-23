@@ -1,17 +1,15 @@
-{
-  "language": "java",
-  "os": [
-    "linux"
-  ],
-  "dist": "xenial",
-  "after_success": [
-    "bash <(curl -s https://codecov.io/bash)"
-  ],
-  "env": {
-    "global": [
-      {
+dist: xenial
+
+language: java
+
+jdk:
+ - openjdk8
+ - openjdk11
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  
+  "env": 
+    "global":
         "CODECOV_TOKEN": "\"f4a8af19-091f-4c72-83bb-2ee9e0987ff9\""
-      }
-    ]
-  }
-}
+
